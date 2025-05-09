@@ -11,7 +11,74 @@ function App() {
       <MantineProvider>
         <Timeline active={1} bulletSize={24} lineWidth={2} align="right">
           <Timeline.Item title="2020" __align="left">
-            <Expander />
+            <Expander>
+              <div
+                style={{
+                  border: "2px solid black",
+                  width: "15vh",
+                  height: "10vh",
+                  alignContent: "center",
+                  textAlign: "center",
+                }}
+              >
+                Test
+              </div>
+              <div
+                style={{
+                  border: "2px solid black",
+                  width: "15vh",
+                  height: "10vh",
+                  alignContent: "center",
+                  textAlign: "center",
+                }}
+              >
+                Test
+              </div>
+              <div
+                style={{
+                  border: "2px solid black",
+                  width: "15vh",
+                  height: "10vh",
+                  alignContent: "center",
+                  textAlign: "center",
+                }}
+              >
+                Test
+              </div>
+              <div
+                style={{
+                  border: "2px solid black",
+                  width: "15vh",
+                  height: "10vh",
+                  alignContent: "center",
+                  textAlign: "center",
+                }}
+              >
+                Test
+              </div>
+              <div
+                style={{
+                  border: "2px solid black",
+                  width: "15vh",
+                  height: "10vh",
+                  alignContent: "center",
+                  textAlign: "center",
+                }}
+              >
+                Test
+              </div>
+              <div
+                style={{
+                  border: "2px solid black",
+                  width: "15vh",
+                  height: "10vh",
+                  alignContent: "center",
+                  textAlign: "center",
+                }}
+              >
+                Test
+              </div>
+            </Expander>
           </Timeline.Item>
           <Timeline.Item title="2021"></Timeline.Item>
           <Timeline.Item title="2022"></Timeline.Item>

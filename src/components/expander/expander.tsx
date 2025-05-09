@@ -1,8 +1,8 @@
 import { Button } from "@mantine/core";
 import styles from "./expander.module.scss";
-import { useState } from "react";
+import { useState, type PropsWithChildren } from "react";
 
-export function Expander() {
+export function Expander({children} : PropsWithChildren) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -26,11 +26,7 @@ export function Expander() {
           open ? styles["expander__item__list--open"] : "",
         ].join(" ")}
       >
-        <div className={styles.expander__item}>Expand Item 1</div>
-        <div className={styles.expander__item}>Expand Item 2</div>
-        <div className={styles.expander__item}>Expand Item 3</div>
-        <div className={styles.expander__item}>Expand Item 4</div>
-        <div className={styles.expander__item}>Expand Item 5</div>
+        {children}
       </div>
     </div>
   );
