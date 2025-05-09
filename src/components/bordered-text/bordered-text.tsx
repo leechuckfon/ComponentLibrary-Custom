@@ -6,6 +6,7 @@ interface BorderedContainerProps extends PropsWithChildren {
   borderRadius?: string;
   borderColor?: string;
   borderThickness?: string;
+  padding?: string;
 }
 
 export function BorderedContainer({
@@ -13,6 +14,7 @@ export function BorderedContainer({
   borderRadius = "2ch",
   borderThickness = "2px",
   borderColor = "orange",
+  padding = "5ch",
   children,
 }: BorderedContainerProps) {
   return (
@@ -44,7 +46,7 @@ export function BorderedContainer({
           }}
         ></div>
       </div>
-      <div className={styles.container__content}>{children}</div>
+      <div style={{ padding }}>{children}</div>
     </div>
   );
 }
