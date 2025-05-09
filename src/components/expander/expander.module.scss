@@ -1,0 +1,42 @@
+.expander {
+    &__container {
+        display: flex;
+        gap: 2ch;
+        flex-direction: row-reverse;
+        overflow: hidden;
+    }
+
+    &__arrow {
+        transition: all 300ms;
+
+        &--active {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__button {
+        height: 10vh;
+        z-index: 1;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        width: 15vh;
+        border: 2px black solid;
+
+        &__list {
+            transition: all 500ms;
+            transform: translateX(150%);
+            display: flex;
+            z-index: 0;
+            gap: 2ch;
+
+            &--open {
+                transform: translateX(0);
+            }
+        }
+    }
+}
