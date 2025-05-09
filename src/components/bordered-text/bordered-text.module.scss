@@ -1,17 +1,6 @@
 .container {
-    border-radius: 0.5ch;
     position: relative;
     background-color: transparent;
-
-    &::before {
-        border-bottom: 2px orange solid;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        padding: 5ch;
-        left: 0;
-        content: '';
-    }
 
     &__content {
         padding: 5ch;
@@ -35,21 +24,24 @@
 
 .b {
     &l {
-        border-left: 2px orange solid;
-        border-top: 2px orange solid;
+        border: 2px orange solid;
+        border-right: none;
         position: relative;
         flex-grow: 1;
+        border-radius: 2ch 0 0 2ch;
     }
 
     &c {
         border-top: 2px transparent solid;
         display: flex;
         justify-content: center;
+        border-bottom: 2px orange solid;
     }
 
     &r {
-        border-right: 2px orange solid;
-        border-top: 2px orange solid;
+        border: 2px orange solid;
+        border-left: none;
         flex-grow: 1;
+        border-radius: 0 2ch 2ch 0;
     }
 }
