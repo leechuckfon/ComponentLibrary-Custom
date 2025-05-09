@@ -5,8 +5,6 @@ import { MantineProvider } from "@mantine/core";
 import { BorderedContainer } from "./components/bordered-text/bordered-text";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <MantineProvider>

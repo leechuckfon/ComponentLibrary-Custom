@@ -24,24 +24,18 @@
 
 .b {
     &l {
-        border: 2px orange solid;
-        border-right: none;
+        border-right: none !important;
         position: relative;
         flex-grow: 1;
-        border-radius: 2ch 0 0 2ch;
     }
 
     &c {
-        border-top: 2px transparent solid;
         display: flex;
         justify-content: center;
-        border-bottom: 2px orange solid;
     }
 
     &r {
-        border: 2px orange solid;
-        border-left: none;
+        border-left: none !important;
         flex-grow: 1;
-        border-radius: 0 2ch 2ch 0;
     }
 }
