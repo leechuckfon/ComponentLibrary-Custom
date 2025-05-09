@@ -43,20 +43,3 @@
 .read-the-docs {
   color: #888;
 }
-
-
-.container {
-  border: 2px orange solid;
-  border-radius: 0.5ch;
-  padding: 5ch;
-  position: relative;
-}
-
-.container__title {
-  font-weight: bold;
-  font-size: 3ch;
-  position: absolute;
-  top: -2vh;
-  background-color: white;
-  padding: 0 1ch;
-}
